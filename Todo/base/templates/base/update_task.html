@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Update Tasks</title>
+</head>
+
+<body style="background-color: #FAEBD7; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="text-align: center; width: 50%; background-color: #FFF; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h3 style="color: navy; text-decoration: underline; font-family: Arial, sans-serif;">Update Tasks</h3>
+
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form}}
+            <input type='submit' name='Update task' style="padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer; margin-top: 10px;">
+        </form>
+    </div>
+</body>
+
+</html>
